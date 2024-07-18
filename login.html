@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Page</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            width: 100%;
+            position: fixed;
+            top: 0;
+            margin-top: 0; /* Set margin-top to 0 */
+            padding: 0;
+            background-color: rgb(142, 195, 251);
+        }
+         
+
+        .logo {
+            width: 300px;
+            margin-right: 10px;
+        }
+
+        .header h1 {
+            font-weight: bold;
+            margin: 0;
+            line-height: 1;
+            font-size: 70px;
+            color: purple;
+        }
+
+        .content {
+            padding-top: 200px; /* Adjust this value according to the height of the header */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <img class="logo" src="selilac.png" alt="Website Logo">
+            <h1 style="color:purple;">GREENOVATING THE WORLD</h1>
+        </div>
+        <div class="content">
+            <h2 style="font-size: 50px;">Login Form</h2>
+            <form method="post" action="login.php">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                <input type="submit" value="Login">
+            </form>
+            <p>Do not have an account? <a href="register.html">Click Here</a></p>
+        </div>
+    </div>
+</body>
+
+</html>

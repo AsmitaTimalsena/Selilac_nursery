@@ -1,0 +1,10 @@
+CREATE DATABASE IF NOT EXISTS shp;
+
+USE your_database_name;
+
+CREATE TABLE IF NOT EXISTS users (
+    name TEXT NOT NULL,
+    username VARCHAR(18) NOT NULL PRIMARY KEY,
+    email VARCHAR(21) NOT NULL UNIQUE,
+    password TEXT NOT NULL
+);
